@@ -5,7 +5,7 @@ import json
 import argparse
 
 def check_ip(ip):
-	url="http://apis.juhe.cn/ip/ip2addr?ip="+ip+"&key=0e2c3133ce91bb8854b2a13fb4ebb07e"
+	url="http://apis.juhe.cn/ip/ip2addr?ip="+ip+"&key=*****************"
 	resp=urllib.urlopen(url)
 	content=resp.read()
 	res=json.loads(content)
@@ -19,7 +19,7 @@ def check_ip(ip):
 
 if __name__=="__main__":
 	using="""Using:python chaip.py --ip 8.8.8.8
-		       python chaip.py --list ip.txt
+      python chaip.py --list ip.txt
 		      --ip    +ip address
 		      --list  +ip address list
 	                                	 author:ggchang
