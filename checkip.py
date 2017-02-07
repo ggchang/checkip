@@ -19,6 +19,7 @@ def check_ip(ip):
 
 if __name__=="__main__":
 	using="""Using:python chaip.py --ip 8.8.8.8
+		       python chaip.py --list ip.txt
 		      --ip    +ip address
 		      --list  +ip address list
 	                                	 author:ggchang
